@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#nav {
+    margin-top: 10px;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#nav a:hover {
+    color: purple;
+}
+
+article {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#campo_dados {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul#elementos {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#elementos li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+}
+input[type="text"]:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+input[type="checkbox"] {
+    margin: 10px 0 10px 0;
+    transform: scale(1.2);
+}
+
+
+label {
+    margin: 10px 0 10px 0;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    #nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    #campo_dados {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav a {
+        font-size: 14px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    #campo_dados {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 15px;
+    }
+
+    button {
+        width: auto;
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    article {
+        padding: 20px;
+    }
+
+    #campo_dados {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+}
+legend{
+    margin-top: 16px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+fieldset{
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+}
+
+#os {
+    width: 1000;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #FFF;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    display: none;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    background-color: #f4f4f4;
+}
+
+.copy-button {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px 4px 0;
+
+}
+
+.copy-button:hover {
+    color: #fff;    
+}

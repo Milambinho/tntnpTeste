@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo OS notepad</title>
+    <link rel="stylesheet" href="static/css/reset.css"> 
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon" />
+</head>
+<script src="static/js/index.js"></script>
+<body>
+    <header id="cabecalho">
+        <h1 id="titulo">Turbo OS notepad</h1>
+        <nav id="nav"><a href="./index.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #fff;" onmouseover="this.style.color = 'purple'" onmouseout="this.style.color = '#fff'">->Nova OS</a></nav>
+    </header>
+    <article id="main">
+        <div id="campo_dados">
+            <p id="cabecalho_escolha">Selecione um perfil de OS</label>
+            <ul id="elementos">
+                <li>
+                    <input type="radio" id="tecnico" name="profile" value="tecnico" checked>
+                    <label for="tecnico" class="dados">Atendimento técnico</label>
+                </li>
+            </ul>
+        </div>
+        <div id="forms"></div>
+        <div id="os">
+            <div class="container-header">
+                <button class="copy-button" onclick="copyContent()">Copiar</button>
+            </div>
+            <div id="ordem"></div>
+        </div>
+    </article>
+</body>
+</html>
